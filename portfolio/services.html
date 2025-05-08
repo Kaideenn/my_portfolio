@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Labs & Exercises</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <!-- Navigation Bar -->
+<nav>
+  <div class="nav__content">
+    <div class="logo"><a href="#">KAIDEN</a></div>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+  <!-- Main Section -->
+  <section class="section">
+  <section class="section">
+    <!-- Tabs -->
+     <!-- Laboratories Tab -->
+<button class="tab-btn active" onclick="openTab(event, 'labs')">Laboratories</button>
+
+<!-- Exercises Tab -->
+<button class="tab-btn" onclick="openTab(event, 'exercises')">Exercises</button>
+
+    
+    <!-- Laboratories Tab Content -->
+    <div class="tab-content" id="labs">
+      <ul>
+        <li><a href="#" onclick="loadFile('laboratories/lab1.html')">Lab 1</a></li>
+        <li><a href="#" onclick="loadFile('laboratories/lab2.html')">Lab 2</a></li>
+        <li><a href="#" onclick="loadFile('laboratories/lab3.html')">Lab 3</a></li>
+        <li><a href="#" onclick="loadFile('laboratories/lab4.html')">Lab 4</a></li>
+        <li><a href="#" onclick="loadFile('laboratories/lab5.html')">Lab 5</a></li>
+        <li><a href="#" onclick="loadFile('laboratories/lab6.html')">Lab 6</a></li>
+        <li><a href="#" onclick="loadFile('laboratories/lab7.html')">Lab 7</a></li>
+        <li><a href="#" onclick="loadFile('laboratories/lab8.html')">Lab 8</a></li>
+      </ul>
+    </div>
+
+ <!-- Exercises Tab Content -->
+<div class="tab-content" id="exercises" style="display: none;">
+  <div class="folder-tabs">
+    <button class="tab-btn" onclick="openFolder('BuildInFunction')">Build In Function</button>
+    <button class="tab-btn" onclick="openFolder('ControlStructures')">Control Structures</button>
+    <button class="tab-btn" onclick="openFolder('DataTypes')">Data Types</button>
+    <button class="tab-btn" onclick="openFolder('Functions')">Functions</button>
+  </div>
+
+  <!-- Folders Content -->
+  <div class="folder-content" id="BuildInFunction">
+    <ul>
+      <li><a href="#" onclick="loadFile('exercises/BuildInFunctions/Exercise1.php')">Exercise 1</a></li>
+      <li><a href="#" onclick="loadFile('exercises/BuildInFunctions/Exercise2.php')">Exercise 2</a></li>
+      <li><a href="#" onclick="loadFile('exercises/BuildInFunctions/Exercise3.php')">Exercise 3</a></li>
+      <li><a href="#" onclick="loadFile('exercises/BuildInFunctions/Exercise4.php')">Exercise 4</a></li>
+      <li><a href="#" onclick="loadFile('exercises/BuildInFunctions/Exercise5.php')">Exercise 5</a></li>
+      <li><a href="#" onclick="loadFile('exercises/BuildInFunctions/Exercise6.php')">Exercise 6</a></li>
+      <li><a href="#" onclick="loadFile('exercises/BuildInFunctions/Exercise7.php')">Exercise 7</a></li>
+    </ul>
+  </div>
+
+  <div class="folder-content" id="ControlStructures">
+    <ul>
+      <li><a href="#" onclick="loadFile('exercises/ControlStructures/Exercise1.php')">Exercise 1</a></li>
+      <li><a href="#" onclick="loadFile('exercises/ControlStructures/Exercise2.php')">Exercise 2</a></li>
+      <li><a href="#" onclick="loadFile('exercises/ControlStructures/Exercise3.php')">Exercise 3</a></li>
+      <li><a href="#" onclick="loadFile('exercises/ControlStructures/Exercise4.php')">Exercise 4</a></li>
+      <li><a href="#" onclick="loadFile('exercises/ControlStructures/Exercise5.php')">Exercise 5</a></li>
+      <li><a href="#" onclick="loadFile('exercises/ControlStructures/Exercise6.php')">Exercise 6</a></li>
+      <li><a href="#" onclick="loadFile('exercises/ControlStructures/Exercise7.php')">Exercise 7</a></li>
+    </ul>
+  </div>
+
+  <div class="folder-content" id="DataTypes">
+    <ul>
+      <li><a href="#" onclick="loadFile('exercises/DataTypes/Exercise1.php')">Exercise 1</a></li>
+      <li><a href="#" onclick="loadFile('exercises/DataTypes/Exercise2.php')">Exercise 2</a></li>
+      <li><a href="#" onclick="loadFile('exercises/DataTypes/Exercise3.php')">Exercise 3</a></li>
+      <li><a href="#" onclick="loadFile('exercises/DataTypes/Exercise4.php')">Exercise 4</a></li>
+      <li><a href="#" onclick="loadFile('exercises/DataTypes/Exercise5.php')">Exercise 5</a></li>
+      <li><a href="#" onclick="loadFile('exercises/DataTypes/Exercise6.php')">Exercise 6</a></li>
+    </ul>
+  </div>
+
+  <div class="folder-content" id="Functions">
+    <ul>
+      <li><a href="#" onclick="loadFile('exercises/Functions/Exercise1.php')">Exercise 1</a></li>
+      <li><a href="#" onclick="loadFile('exercises/Functions/Exercise2.php')">Exercise 2</a></li>
+      <li><a href="#" onclick="loadFile('exercises/Functions/Exercise3.php')">Exercise 3</a></li>
+      <li><a href="#" onclick="loadFile('exercises/Functions/Exercise4.php')">Exercise 4</a></li>
+      <li><a href="#" onclick="loadFile('exercises/Functions/Exercise5.php')">Exercise 5</a></li>
+      <li><a href="#" onclick="loadFile('exercises/Functions/Exercise6.php')">Exercise 6</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <!-- Output Box -->
+    <div class="output-box" id="output-box">
+      <p>Select a lab or exercise to view its content.</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

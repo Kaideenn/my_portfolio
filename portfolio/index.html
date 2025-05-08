@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Kian's Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__content">
+        <div class="logo"><a href="#">KAIDEN</a></div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <section class="section">
+      <div class="section__container">
+        <div class="content">
+          <p class="subtitle">HELLO</p>
+          <h1 class="title">I'm <span>Kian</span><br> Welcome to My Portfolio</h1>
+          <p class="description">Welcome! I’m Kian Ernest A. Bihasa, a passionate IT student at ASCOT. Here, you’ll find insights into my journey, skills, and projects. Let’s explore!</p>
+          <a href="about.html" class="btn">Learn More</a>
+        </div>
+        <div class="image">
+          <img src="kianpogi1.jpg" alt="profile" class="profile-pic" />
+        </div>
+      </div>
+    </section>
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        gsap.from(".nav__content", { duration: 1, opacity: 0, y: -50, ease: "power3.out" });
+        gsap.from(".title", { duration: 1, opacity: 0, x: -100, delay: 0.5, ease: "power3.out" });
+        gsap.from(".description", { duration: 1, opacity: 0, y: 50, delay: 0.7, ease: "power3.out" });
+        gsap.from(".profile-pic", { duration: 1, opacity: 0, scale: 0.8, delay: 1, ease: "power3.out" });
+      });
+    </script>
+  </body>
+</html>
